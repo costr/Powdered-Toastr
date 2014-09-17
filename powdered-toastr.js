@@ -72,7 +72,7 @@ var PowderedToastr = function () {
         QuickSuccessToast   : _quickCreateAndShowNewSuccessToast,
         QuickToast          : _quickCreateAndShowNewToast,
 
-        NewToast	        : _getNewToast,
+        NewToast	    : _getNewToast,
         ShowToast           : _showToast,
 
         MessageTypeEnum     : messageTypesEnum
