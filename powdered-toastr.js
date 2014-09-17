@@ -6,22 +6,22 @@ var PowderedToastr = function () {
     "use strict";
 
     var DefaultToastrOptions = {
-            "positionClass": "toast-bottom-right",  // the location in which to show the toast
-            "showDuration": "100",                  // how quickly the message goes from hidden to visible
-            "hideDuration": "300",                  // how quickly the message goes from visible to hidden
-            "timeOut": "2000",                      // how long the message is displayed before starting to hide 
-            "extendedTimeOut": "2000",              // the additional time added if a user hovers over the message
-            "showEasing": "swing",                  // animation related; the type of mathematical curve used to progress the animation for showing the toast
-            "hideEasing": "linear",                 // animation related; the type of mathematical curve used to progress the animation for hiding the toast
-            "showMethod": "fadeIn",                 // the jQuery animation used to show the toast (show, slideDown, fadeIn)
-            "hideMethod": "fadeOut"                 // the jQuery animation used to hide the toast
+            "positionClass"         : "toast-bottom-right", // the location in which to show the toast
+            "showDuration"          : "100",                // how quickly the message goes from hidden to visible
+            "hideDuration"          : "300",                // how quickly the message goes from visible to hidden
+            "timeOut"               : "2000",               // how long the message is displayed before starting to hide 
+            "extendedTimeOut"       : "2000",               // the additional time added if a user hovers over the message
+            "showEasing"            : "swing",              // animation related; the type of mathematical curve used to progress the animation for showing the toast
+            "hideEasing"            : "linear",             // animation related; the type of mathematical curve used to progress the animation for hiding the toast
+            "showMethod"            : "fadeIn",             // the jQuery animation used to show the toast (show, slideDown, fadeIn)
+            "hideMethod"            : "fadeOut"             // the jQuery animation used to hide the toast
         },
         messageTypesEnum =
         {
-            "ERROR": "error",
-            "INFO": "info",
-            "SUCCESS": "success",
-            "WARNING": "warning"
+            "ERROR"     : "error",
+            "INFO"      : "info",
+            "SUCCESS"   : "success",
+            "WARNING"   : "warning"
         };
 
     function Toast(title, message, messageType, overrideOptions) {
@@ -72,9 +72,9 @@ var PowderedToastr = function () {
         QuickSuccessToast   : _quickCreateAndShowNewSuccessToast,
         QuickToast          : _quickCreateAndShowNewToast,
 
-        MessageTypeEnum     : messageTypesEnum,
-
         NewToast	        : _getNewToast,
-        ShowToast           : _showToast
+        ShowToast           : _showToast,
+
+        MessageTypeEnum     : messageTypesEnum
     }
 }();
